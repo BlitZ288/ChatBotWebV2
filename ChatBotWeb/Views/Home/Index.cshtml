@@ -1,0 +1,50 @@
+﻿@model List<ChatViewModel>
+<div class="text-center mt-3">
+    @if (Model.Any())
+    {
+        @foreach (var chat in Model)
+        {
+            <div class="list-group card__Chat">
+                <form id="@chat.Id" asp-action="Index" asp-controller="Chat" method="post">
+
+                    <input type="hidden" asp-for="@chat.Id" name="IdChat" />
+                    <button class="list-group-item list-group-item-action flex-column align-items-start" type="submit">
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">@chat.NameChat</h5>
+                        </div>
+                        <p class="mb-1">
+                            Пользователи чата:
+                            @foreach (var u in chat.Users)
+                            {
+                                @(u.Name+" ");
+                            }
+                            <br />
+
+                        </p>
+                        <p class="mb-1" style="text-align: initial;">
+                            Боты:
+                            @foreach (var name in chat.NameBots)
+                            {
+                                @(name+" ")
+                            }
+
+                        </p>
+                    </button>
+                </form>
+            </div>
+            if (User.IsInRole("Admin"))
+            {
+                <form id="@chat.Id" class=" del__chat" asp-action="DeleteChat" asp-controller="Home" method="post">
+                    <input type="hidden" asp-for="@chat.Id" name="IdChat" />
+                    <button class="btn btn-outline-danger">Удалить чат</button>
+                </form>
+            }
+        }
+    }
+    else
+    {
+
+        <h2 class="text-center">Чатов пока нет </h2>
+    }
+</div>

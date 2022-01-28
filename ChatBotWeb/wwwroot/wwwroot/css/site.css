@@ -1,0 +1,184 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.btn-link {
+    border: 1px solid;
+    margin: 12px;
+}
+
+.conteiner__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__Chat {
+    padding-bottom: 10px;
+}
+
+.item__menu {
+    color: #000000;
+}
+
+.title__body {
+    padding: 12px
+}
+
+.btn__user {
+    padding: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.col_user {
+    display: flex;
+    flex-direction: row;
+}
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%
+}
+
+.container_mes {
+    height: 350px;
+    overflow: auto;
+}
+
+.item_mes {
+    border-radius: 10px;
+    border: 1px solid #808080;
+    color: #000000;
+    padding: .5rem .5rem .375rem .625rem;
+    line-height: 1.3125;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.you_mes {
+    text-align: end;
+}
+
+    .you_mes div {
+        background-color: #ebf9fb
+    }
+
+.notyou_mes {
+    text-align: start;
+}
+
+.name_user {
+    font-size: 14px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+    text-align: start;
+    /*padding-left: 5px;*/
+}
+
+.date_mes {
+    text-align: end;
+    padding-right: 15px;
+}
+
+.content__mes {
+    height: 75%;
+    margin-bottom: 15px;
+    overflow: auto;
+    text-align: start;
+    /*padding-left: 15px;*/
+    margin-bottom: 0;
+}
+
+.del__chat {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 10px;
+}
+
+.btn__close {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: .25em .25em;
+    color: #000;
+    border: 0;
+    border-radius: .25rem;
+    opacity: .5;
+    outline: none; /* Для синий ободки */
+    border: 0;
+    background: transparent;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
